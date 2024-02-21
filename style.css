@@ -11,7 +11,15 @@ html {
 }
 
 body {
-	background-color: #white;
+	background-color: #CCC;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 2rem;
 }
 
 h1, h2, p, li {
@@ -20,7 +28,7 @@ h1, h2, p, li {
 }
 
 a {
-	color: #336;
+	color: #454545;
 	text-decoration: none;
 }
 
@@ -29,7 +37,7 @@ a {
 }
 
 ul	{
-	background-color: yellowgreen;
+	background-color: #CCC;
 	font-size: 20px;
 }
 
@@ -46,18 +54,55 @@ p {
 
 h2 {
 	font-size: 2rem;
-	font-size: 40px;
+	font-size: 3rem;
 }
 
 .navegacao {
-	background-color: #ffffff;
-}
-.navegacao a {
-	color: #393;
+	background-color: #CCC;
 }
 
-[type="text"], [type="email"], textarea {
-	margin-bottom: 20px;
+.navegacao li {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 1rem 1rem 1.5rem 1rem;
+}
+
+.navegacao a {
+	color: #454545;
+	display: block;
+	width: 100%;
+	margin-bottom: .5rem;
+}
+
+form {
+	background-color: #ccc;
+}
+
+form div {
+	background: #fff;
+	border: 0;
+	border-bottom: 1px solid #454545;
+/*	border-top: 1px solid #33f;
+	border-left: 1px solid #33f;
+	border-right: 1px solid #33f;*/	
+	margin: 1rem 2rem;
+	padding: 2rem;
+}
+
+label {
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #454545;
+}
+
+input {
+	padding: 1rem;
+}
+
+[type="text"], [type="email"], textarea, label {
+	display: block;
+	width: 100%;
 }
 
 /* Style the header */
@@ -72,7 +117,7 @@ header {
 /* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
-  width: 30%;
+  width: 15%;
    
   background: #ccc;
   padding: 20px;
@@ -87,13 +132,13 @@ nav ul {
 article {
   float: left;
   padding: 20px;
-  width: 70%;
+  width: 85%;
   background-color: #f1f1f1;
 }
 
 /* Clear floats after the columns */
 section::after {
-  background: #ccc;
+  background: #eee;
   content: "";
   display: table;
   clear: both;
@@ -102,7 +147,7 @@ section::after {
 /* Style the footer */
 footer {
   background-color: #777;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   color: white;
 }
@@ -114,3 +159,10 @@ footer {
     height: auto;
   }
 }
+
+/*
+	top (superior /cima)
+	bottom(inferior / baixo)
+	left(esquerda)
+	right(direita)	
+*/
