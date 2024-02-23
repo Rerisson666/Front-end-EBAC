@@ -1,0 +1,30 @@
+div {
+    margin: 40px auto;
+}
+/*Círculo*/
+#grafico-01 {
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    overflow: hidden; /** Quando a Área do Conteúdo passar da Área do background**/
+    border-radius: 50%;/**Canto arredondados**/
+}
+
+#grafico-01 img {
+    width: 100%;
+    height: auto;
+}
+/*Triangulo*/
+#grafico-02 {
+    background: transparent;
+    margin: 40px auto;
+    border-style: solid;
+    border-width: 60px 0 60px 120px;
+    border-color: transparent transparent transparent blue;
+    width: 60px;
+}
+
+#imagem-vetorial {
+    height: 300px;
+    width: 100px;
+}

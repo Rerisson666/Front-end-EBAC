@@ -44,13 +44,11 @@ header p {
 
 header h2 {
 	font-weight: 100;
-	color: #000000;
 }
 
 
 header > h2 {
 	font-weight: 600;
-	color: #000000;
 }
 
 h2 + p {
@@ -138,18 +136,18 @@ h3 {
 */
 
 body {
-	background: url("../images/opop.png") center top repeat #EEEEEE;
+	background: url('../images/pattern.png') center top repeat #EEEEEE;
 }
 
-
 section {
-	background: rgba(255, 255, 255, .75);
+	background: rgba(255, 255, 255, 0.95);
 }
 
 p {
 	color: blue;
 	color: #034589;
 }
+
 header,
 footer {
 	background-color: #034589;
@@ -161,7 +159,7 @@ footer p {
 
 .navegacao {
 	background-color: rgba(0, 0, 0, 0.5);
-	padding: .5rem;
+	padding: 0.5rem;
 }
 
 .navegacao li a {
@@ -169,7 +167,7 @@ footer p {
 	font-size: 1.4rem;
 }
 
-.navegacao li a:hover{
+.navegacao li a:hover {
 	background-color: rgba(150, 150, 200, .5);
 	color: #333333;
 }
