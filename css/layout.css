@@ -14,6 +14,11 @@ html {
 	font-size: 62.5%; /* equivalente a 10px */
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
 	background-color: white;
 }
@@ -58,12 +63,14 @@ input {
 header {
   background-color: #333;
   padding: 30px;
-  text-align: center;
+  text-align: left;
   font-size: 35px;
   color: white;
+
 }
 
 nav {
+  /*background-color: tomato; /*Muda as regras de quebra de linha*/
   float: left;
   width: 30%;
   padding: 20px;
@@ -75,6 +82,7 @@ nav ul {
 }
 
 article {
+  /*background-color: yellow;*/
   float: left;
   padding: 20px;
   width: 70%;
@@ -93,10 +101,68 @@ footer {
   color: white;
 }
 
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
+
+.coluna {
+  display: block;
+  width: 33.3%;
+  float: left;
+  padding: 5px;
+  /*background: #eee;
+  border: 1px solid #333;*/
+  columns: 150px 2;
+}
+
+.coluna-3 {
+  columns:  100px 2;
+  width: 50%;
+}
+
+.coluna-100w {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+}
+
+/*Mobile First*/
+
+/*Tablet*/
+@media (min-width: 769px){
+
+  body {
+    background-color: teal;
+    color: #fff;
+  }
+
+  p, h3, li, a {
+    color: whitesmoke;
+  }
+
+}
+
+@media (max-width: 768px){
+  nav {
+    width: 30vw;
+  }
+
+  article {
+    width: 70vw;
+  }
+
+  .coluna{
+    width: 50vw;
+    min-width: unset;
   }
 }
 
+/*Smartphone*/
+
+@media (max-width: 425px){
+  nav,
+  article,
+  .coluna{
+    width: 100%;
+    min-width: 320px;
+  }
+}
